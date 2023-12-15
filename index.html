@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="theme-color" content="#f7f7fa" /> -->
+    <!-- <link rel="shortcut icon" href="./Image/Logo title.svg" /> -->
+    <title>ROSE Hat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <link rel="stylesheet" href="Content/index.css" />
+    <link rel="stylesheet" href="Content/Similarity-style.css" />
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- <script src="Script/index.js" defer></script> -->
+    <script src="./Script/Similarity-script-jquery.js" defer></script>
+    <script src="./Script/similarity-script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 m-0">
+      <!-- loader -->
+      <div class="container-loader">
+        <button class="Logo Logo-loader">
+          <span>ROSE</span>
+        </button>
+        <div class="desc-loader">
+          <span>لطفا صبر کنید ...</span>
+          <div class="loader"></div>
+        </div>
+      </div>
+      <!-- Notifications -->
+      <div class="container-Notifications">
+        <button class="btn-Notifications" dir="ltr">
+          <svg class="bell" viewBox="0 0 448 512">
+            <path
+              d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"
+            ></path>
+          </svg>
+          پیام
+          <div class="arrow">›</div>
+        </button>
+      </div>
+      <!-- box-Notifications -->
+      <div class="container-box-Notifications">
+        <div class="box-Notifications">
+          <div class="header-box-Notifications">
+            <span> پیام </span>
+            <i class="bi bi-x-lg btn-close-box-Notifications"></i>
+          </div>
+          <div class="main-box-Notifications">
+            <div class="list-main-box-Notifications">
+              <li
+                class="item-main-box-Notifications item-main-box-Notifications-all"
+              >
+                <span class="num-Notifications num-Notifications-all"></span>
+                همه
+              </li>
+              <li
+                class="item-main-box-Notifications item-main-box-Notifications-suggestion"
+              >
+                <span class="num-Notifications num-Notifications-suggestion"
+                  >0</span
+                >
+                پیشنهاادات
+              </li>
+            </div>
+          </div>
+          <div class="body-box-Notifications"></div>
+        </div>
+      </div>
+      <!-- header -->
+      <header>
+        <div class="row p-0 m-0 mb-5">
+          <div class="col p-0 m-0 mb-5">
+            <nav>
+              <menu class="menu">
+                <div class="list-menu">
+                  <li class="item-menu">
+                    <a href="#" class="link-menu link-menu-page">
+                      <i class="bi bi-dot"></i> صفحه اصلی
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="#" class="link-menu"> دوره </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="#" class="link-menu"> درباره ما </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="#" class="link-menu"> ارتباط با ما </a>
+                  </li>
+                </div>
+                <div class="main-menu">
+                  <button class="item-menu-circle dark-mood">
+                    <i class="bi bi-brightness-high"></i>
+                  </button>
+                  <button class="item-menu-circle">
+                    <i class="bi bi-person"></i>
+                  </button>
+                  <span class="line-menu"></span>
+                  <li class="item-main-menu">
+                    <a href="#" class="link-main-menu">
+                      <button class="Logo">
+                        <span>ROSE</span>
+                      </button>
+                    </a>
+                  </li>
+                </div>
+              </menu>
+              <div class="menu-mobile">
+                <div class="hamburger">
+                  <div class="line-one"></div>
+                  <div class="line-two"></div>
+                  <div class="line-tree"></div>
+                </div>
+                <li class="item-main-menu">
+                  <a href="#" class="link-main-menu">
+                    <button class="Logo">
+                      <span>ROSE</span>
+                    </button>
+                  </a>
+                </li>
+              </div>
+              <div class="sub-menu">
+                <div class="list-sub-menu">
+                  <li class="item-sub-menu">
+                    <a href="#" class="link-sub-menu link-menu-page">
+                      <i class="bi bi-dot"></i> صفحه اصلی
+                    </a>
+                  </li>
+                  <li class="item-sub-menu">
+                    <a href="#" class="link-sub-menu"> دوره </a>
+                  </li>
+                  <li class="item-sub-menu">
+                    <a href="#" class="link-sub-menu"> درباره ما </a>
+                  </li>
+                  <li class="item-sub-menu">
+                    <a href="#" class="link-sub-menu"> ارتباط با ما </a>
+                  </li>
+                  <hr />
+                  <li class="group-btn-sub-menu">
+                    <a href="#" class="link-sub-menu">
+                      <button class="button">
+                        <i class="bi bi-person"></i>
+                        &nbsp;
+                        <p class="text">ورود</p>
+                      </button>
+                    </a>
+                    <button class="button dark-mood">
+                      <i class="bi bi-brightness-high"></i>
+                      &nbsp;
+                      <p class="text">حالت تاریک</p>
+                    </button>
+                  </li>
+                </div>
+              </div>
+              <div class="slider-sub-menu"></div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- main -->
+      <main class="mt-5">
+        <!-- header -->
+        <div class="row p-0 m-0 mt-5 pt-1">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="container-header"></div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="container-poster">
+              <img src="./Image/welcom.png" alt="" class="img-poster" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- footer -->
+      <div class="row p-0 m-0"></div>
+    </div>
+  </body>
+</html>
